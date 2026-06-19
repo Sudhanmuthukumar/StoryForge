@@ -1,0 +1,83 @@
+[
+    {
+        "pattern_id": "dial_0001",
+        "pattern_type": "dialogue_patterns",
+        "content": "were hurrying along for fear of the trolls. It was they who told me that three of \nthem had come down from the mountains and settled in the woods not far from the \nroad; they had frightened everyone away from the district, and they waylaid \nstrangers. \n\"I immediately had a feeling that I was wanted back. Looking behind I saw a \nfire in the distance and made for it. So now you know. Please be more careful, \nnext time, or we shall never get anywhere!\" \n\"Thank you!\" said Thorin.",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "dial_0002",
+        "pattern_type": "dialogue_patterns",
+        "content": "\"Of course!\" said Gandalf. \"And why should not they prove true? Surely you \ndon't disbelieve the prophecies, because you had a hand in bringing them about \nyourself? You don't really suppose, do you, that all your adventures and escapes \nwere managed by mere luck, just for your sole benefit? You are a very fine \nperson, Mr. Baggins, and I am very fond of you; but you are only quite a little \nfellow in a wide world after all!\" \n\"Thank goodness!\" said Bilbo laughing, and handed him the tobacco-jar.",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "dial_0003",
+        "pattern_type": "dialogue_patterns",
+        "content": "`No indeed!'  said Elrond, turning towards  him with a smile.  `You  at \nleast shall go with him. It  is  hardly  possible to separate  you from him, \neven when he is summoned to a secret council and you are not.' \n     Sam sat  down, blushing and muttering.  `A nice  pickle we  have landed \nourselves in, Mr. Frodo!' he said, shaking his head.",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "dial_0004",
+        "pattern_type": "dialogue_patterns",
+        "content": "`Well, sir,  there is a  Council early tomorrow, I hear and he only got \nup today for the first time.' \n     `Quite right, Sam,'  laughed Bilbo. `You can  trot off and tell Gandalf \nthat he  has gone to bed. Good night, Frodo! Bless me, but it  has been good \nto see you again! There are no folk like  hobbits  after all for a real good \ntalk. I am getting very  old, and I began to wonder if I should ever live to \nsee your chapters of  our story. Good night! I'll take a walk, I  think, and \nlook at the stars of Elbereth in the garden. Sleep well!'",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "dial_0005",
+        "pattern_type": "dialogue_patterns",
+        "content": "Bilbo's eyes were seldom wrong. The eagles were coming down the wind, line \nafter line, in such a host as must have gathered from all the eyries of the North. \n\"The Eagles! the Eagles!\" Bilbo cried, dancing and waving his arms. If the \nelves could not see him they could hear him. Soon they too took up the cry, and it \nechoed across the valley. Many wondering eyes looked up, though as yet nothing \ncould be seen except from the southern shoulders of the Mountain. \n\"The Eagles!\" cried Bilbo once more, but at that moment a stone hurtling from \nabove smote heavily on his helm, and he fell with a crash and knew no more.",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "dial_0006",
+        "pattern_type": "dialogue_patterns",
+        "content": "But before he could overtake him, Gollum  was gone. Then  as the  dark  hole \nstood before him and the stench came out to meet him, like a clap of thunder \nthe thought of Frodo  and the monster  smote upon Sam's mind. He spun round, \nand rushed wildly up the path, calling and calling his master's name. He was \ntoo late. So far Gollum's plot had succeeded.",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "dial_0007",
+        "pattern_type": "dialogue_patterns",
+        "content": "'These  are Daeron's Runes,  such as were used  of  old in Moria,' said \nGandalf. 'Here is written in the tongues of Men and Dwarves: \n     balin son of fundin \n     lord of moria.' \n     'He  is  dead then,' said  Frodo. `I feared it was  so.' Gimli cast his \nhood over his face.",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "dial_0008",
+        "pattern_type": "dialogue_patterns",
+        "content": "thick fence of them all round him-that at least was the spiders' idea. Standing now \nin the middle of the hunting and spinning insects Bilbo plucked up his courage \nand began a new song:",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "dial_0009",
+        "pattern_type": "dialogue_patterns",
+        "content": "shall return soon.' \n     With  that  he  turned away and went with Pippin down towards the lower \ncity. And even as they  hastened on their way the wind brought  a grey rain, \nand all the fires sank, and there arose a great smoke before them.",
+        "provenance": [
+            "v4_dataset"
+        ],
+        "occurrence_count": 1
+    }
+]

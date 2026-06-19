@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EventHistory",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "tick_index": { "type": "integer" },
+      "timestamp": { "type": "string" },
+      "type": { "type": "string" },
+      "description": { "type": "string" },
+      "affected_entities": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    },
+    "required": ["tick_index", "timestamp", "type", "description", "affected_entities"]
+  }
+}

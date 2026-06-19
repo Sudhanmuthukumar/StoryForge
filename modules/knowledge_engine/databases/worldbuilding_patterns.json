@@ -1,0 +1,20 @@
+[
+    {
+        "pattern_id": "worl_0001",
+        "pattern_type": "worldbuilding_patterns",
+        "content": "In a hole in the ground there lived a hobbit.",
+        "provenance": [
+            "The_Hobbit_Extraction"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "worl_0002",
+        "pattern_type": "worldbuilding_patterns",
+        "content": "One ring to rule them all.",
+        "provenance": [
+            "LOTR_Extraction"
+        ],
+        "occurrence_count": 1
+    }
+]

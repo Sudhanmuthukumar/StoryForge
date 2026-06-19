@@ -1,0 +1,43 @@
+{
+  "family": {
+    "Sibling": [
+      "(?P<source>[A-Z][a-z]+)'s\\s+(?:sister|brother)\\s+(?P<target>[A-Z][a-z]+)"
+    ],
+    "Parent": [
+      "(?P<source>[A-Z][a-z]+)'s\\s+(?:father|mother|dad|mom)\\s+(?P<target>[A-Z][a-z]+)"
+    ],
+    "Child": [
+      "(?P<source>[A-Z][a-z]+)'s\\s+(?:son|daughter)\\s+(?P<target>[A-Z][a-z]+)"
+    ]
+  },
+  "social": {
+    "Friend": [
+      "(?P<source>[A-Z][a-z]+)'s\\s+(?:friend)\\s+(?P<target>[A-Z][a-z]+)"
+    ],
+    "Mentor": [
+      "(?P<source>[A-Z][a-z]+)\\s+was\\s+(?P<target>[A-Z][a-z]+)'s\\s+mentor",
+      "(?P<target>[A-Z][a-z]+)'s\\s+mentor\\s+(?P<source>[A-Z][a-z]+)"
+    ]
+  },
+  "conflict": {
+    "Enemy": [
+      "(?P<source>[A-Z][a-z]+)\\s+(?:hated|despised|loathed)\\s+(?P<target>[A-Z][a-z]+)"
+    ],
+    "Rival": [
+      "(?P<source>[A-Z][a-z]+)'s\\s+(?:rival)\\s+(?P<target>[A-Z][a-z]+)"
+    ]
+  },
+  "romance": {
+    "Spouse": [
+      "(?P<source>[A-Z][a-z]+)'s\\s+(?:wife|husband|spouse)\\s+(?P<target>[A-Z][a-z]+)"
+    ],
+    "Lover": [
+      "(?P<source>[A-Z][a-z]+)'s\\s+(?:lover)\\s+(?P<target>[A-Z][a-z]+)"
+    ]
+  },
+  "organization": {
+    "Leader": [
+      "(?P<source>[A-Z][a-z]+)'s\\s+(?:leader|boss|commander)\\s+(?P<target>[A-Z][a-z]+)"
+    ]
+  }
+}

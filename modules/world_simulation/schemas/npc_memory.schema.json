@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NPCMemoryDatabase",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "npc_id": { "type": "string" },
+      "name": { "type": "string" },
+      "memories": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "event_id": { "type": "string" },
+            "description": { "type": "string" },
+            "timestamp": { "type": "string" },
+            "emotional_impact": { "type": "string" },
+            "importance": { "type": "integer" }
+          },
+          "required": ["event_id", "description", "timestamp"]
+        }
+      },
+      "quest_outcomes": {
+        "type": "object",
+        "additionalProperties": { "type": "string" }
+      },
+      "relationships": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "trust": { "type": "integer" },
+            "sentiment": { "type": "string" },
+            "interaction_count": { "type": "integer" }
+          },
+          "required": ["trust", "sentiment"]
+        }
+      },
+      "faction_standing": {
+        "type": "object",
+        "additionalProperties": { "type": "integer" }
+      },
+      "interactions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "timestamp": { "type": "string" },
+            "topic": { "type": "string" },
+            "player_choice": { "type": "string" },
+            "outcome": { "type": "string" }
+          },
+          "required": ["timestamp", "topic", "player_choice", "outcome"]
+        }
+      }
+    },
+    "required": ["npc_id", "name", "memories", "quest_outcomes", "relationships", "faction_standing", "interactions"]
+  }
+}

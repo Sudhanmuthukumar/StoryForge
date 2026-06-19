@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Learning Record Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the learning record."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the record was created."
+    },
+    "before_state": {
+      "type": "object",
+      "properties": {
+        "metrics": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "diversity": {
+          "type": "number"
+        },
+        "pacing": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "metrics",
+        "diversity",
+        "pacing"
+      ]
+    },
+    "recommendation_applied": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "number"
+        },
+        "target": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "priority",
+        "target"
+      ]
+    },
+    "after_state": {
+      "type": "object",
+      "properties": {
+        "metrics": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "diversity": {
+          "type": "number"
+        },
+        "pacing": {
+          "type": "number"
+        }
+      }
+    },
+    "outcome_deltas": {
+      "type": "object",
+      "properties": {
+        "health_delta": {
+          "type": "number"
+        },
+        "diversity_delta": {
+          "type": "number"
+        },
+        "pacing_delta": {
+          "type": "number"
+        }
+      }
+    },
+    "evaluation_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "evaluated"
+      ],
+      "description": "Status of the evaluation."
+    }
+  },
+  "required": [
+    "id",
+    "timestamp",
+    "before_state",
+    "recommendation_applied",
+    "evaluation_status"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NPC",
+  "type": "object",
+  "required": ["npc_id", "name", "archetype", "motivation", "secret", "faction", "relationships", "dialogue_style", "quest_hooks"],
+  "properties": {
+    "npc_id": { "type": "string" },
+    "name": { "type": "string" },
+    "archetype": { "type": "string" },
+    "motivation": { "type": "string" },
+    "secret": { "type": "string" },
+    "faction": { "type": "string" },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target_npc", "relation_type", "level"],
+        "properties": {
+          "target_npc": { "type": "string" },
+          "relation_type": { "type": "string" },
+          "level": { "type": "integer" }
+        }
+      }
+    },
+    "dialogue_style": { "type": "string" },
+    "quest_hooks": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

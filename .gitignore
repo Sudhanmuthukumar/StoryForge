@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.env
+
+# Weights & Models
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+checkpoints/
+output/
+adapter_model/
+training_jobs/*/checkpoints/
+training_jobs/*/output/
+ollama_models/
+.cache/
+huggingface/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# StoryForge Artifacts & Data
+archive/
+reports/
+exports/
+universes/
+stories/
+
+# Dataset Lab
+dataset_lab/logs/
+dataset_lab/exports/
+dataset_lab/patterns/merged/
+dataset_lab/patterns/raw/
+dataset_lab/chapters/
+dataset_lab/checkpoints/
+
+# Training
+training_jobs/
+!training_jobs/model_registry.json
+
+# System Output
+*.jsonl
+resume_summary.txt
+
+# Local Application State
+global/
+databases_adaptive/
+databases_baseline/
+modules/world_simulation/databases/
+modules/research_lab/databases/
+modules/world_state/databases/
+
+# Raw Datasets
+dataset_lab/raw/

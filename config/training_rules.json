@@ -1,0 +1,6 @@
+{
+  "theme_learning_rate": 1.0,
+  "relationship_learning_rate": 1.0,
+  "character_learning_rate": 1.0,
+  "dialogue_indicators": ["\"", "'", "said", "asked", "replied", "muttered"]
+}

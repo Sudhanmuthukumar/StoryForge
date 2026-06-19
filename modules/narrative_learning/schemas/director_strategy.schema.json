@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Director Strategy Schema",
+  "type": "object",
+  "properties": {
+    "strategies": {
+      "type": "object",
+      "description": "Success probabilities for high-level strategies.",
+      "properties": {
+        "Escalation Arc": {
+          "type": "object",
+          "properties": {
+            "success_probability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "success_probability"
+          ]
+        },
+        "Recovery Arc": {
+          "type": "object",
+          "properties": {
+            "success_probability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "success_probability"
+          ]
+        },
+        "Mystery Arc": {
+          "type": "object",
+          "properties": {
+            "success_probability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "success_probability"
+          ]
+        },
+        "Character Arc": {
+          "type": "object",
+          "properties": {
+            "success_probability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "success_probability"
+          ]
+        },
+        "Faction Arc": {
+          "type": "object",
+          "properties": {
+            "success_probability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "success_probability"
+          ]
+        }
+      },
+      "required": [
+        "Escalation Arc",
+        "Recovery Arc",
+        "Mystery Arc",
+        "Character Arc",
+        "Faction Arc"
+      ]
+    },
+    "learning_rate": {
+      "type": "number",
+      "description": "The current learning rate for strategy adjustments."
+    },
+    "historical_outcomes": {
+      "type": "array",
+      "description": "Historical outcomes for the strategies.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "strategy_applied": {
+            "type": "string"
+          },
+          "outcome_score": {
+            "type": "number"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "strategy_applied",
+          "outcome_score"
+        ]
+      }
+    }
+  },
+  "required": [
+    "strategies",
+    "learning_rate"
+  ]
+}

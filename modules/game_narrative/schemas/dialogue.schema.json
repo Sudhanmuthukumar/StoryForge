@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DialogueTree",
+  "type": "object",
+  "required": ["tree_id", "npc_name", "nodes"],
+  "properties": {
+    "tree_id": { "type": "string" },
+    "npc_name": { "type": "string" },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node_id", "speaker", "text", "choices"],
+        "properties": {
+          "node_id": { "type": "string" },
+          "speaker": { "type": "string" },
+          "text": { "type": "string" },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text", "target_node_id", "condition", "consequence"],
+              "properties": {
+                "text": { "type": "string" },
+                "target_node_id": { "type": "string" },
+                "condition": { "type": ["string", "null"] },
+                "consequence": { "type": ["string", "null"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "qwen2.5:3b": {
+        "hf_repo": "Qwen/Qwen2.5-3B"
+    },
+    "qwen3:8b": {
+        "hf_repo": "Qwen/Qwen3-8B"
+    }
+}

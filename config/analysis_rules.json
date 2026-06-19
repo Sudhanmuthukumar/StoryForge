@@ -1,0 +1,31 @@
+{
+  "critiques": {
+    "MissingGoal": {
+      "severity": "Medium",
+      "message": "Character has no defined goals.",
+      "recommendation": "Give this character a clear objective to drive their actions."
+    }
+  },
+  "risks": {
+    "MissingMotivation": {
+      "title": "Character may feel shallow",
+      "reason": "Character has goals but lacks underlying motivations explaining why they want them."
+    }
+  },
+  "strengths": {
+    "ConnectedNetwork": {
+      "title": "Connected Character Network",
+      "description": "The story features an interconnected web of character relationships."
+    },
+    "ActiveArcs": {
+      "title": "Active Character Arcs",
+      "description": "Multiple characters have clearly defined goals driving the plot forward."
+    }
+  },
+  "weaknesses": {
+    "IsolatedCharacters": {
+      "title": "Characters are isolated",
+      "description": "There are no relationships defined between characters in the story."
+    }
+  }
+}

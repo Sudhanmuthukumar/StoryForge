@@ -1,0 +1,13 @@
+{
+  "confidence_thresholds": {
+    "low": 1,
+    "medium": 5,
+    "high": 10
+  },
+  "learning_rates": {
+    "genre": 1.0,
+    "theme": 0.5,
+    "relationship": 0.2,
+    "character_type": 0.2
+  }
+}

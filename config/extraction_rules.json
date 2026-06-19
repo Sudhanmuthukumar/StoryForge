@@ -1,0 +1,10 @@
+{
+  "character_verbs": ["said", "replied", "walked", "smiled", "shouted", "nodded", "asked", "sighed", "whispered", "ran", "cried"],
+  "location_prepositions": ["in", "at", "to", "from", "near", "outside", "inside", "toward", "behind", "into"],
+  "organization_suffixes": ["Guild", "Order", "Company", "Association", "Cult", "Empire", "Clan", "Alliance"],
+  "theme_keywords": {
+    "Betrayal": ["betray", "traitor", "backstab", "treason", "deceit"],
+    "Love": ["love", "romance", "kiss", "heart", "passion", "affection"],
+    "War": ["war", "battle", "army", "sword", "blood", "combat", "fight"]
+  }
+}

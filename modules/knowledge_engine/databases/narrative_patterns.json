@@ -1,0 +1,101 @@
+[
+    {
+        "pattern_id": "narr_0001",
+        "pattern_type": "narrative_patterns",
+        "content": "`No indeed!'  said Elrond, turning towards  him with a smile.  `You  at \nleast shall go with him. It  is  hardly  possible to separate  you from him, \neven when he is summoned to a secret council and you are not.' \n     Sam sat  down, blushing and muttering.  `A nice  pickle we  have landed \nourselves in, Mr. Frodo!' he said, shaking his head.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0002",
+        "pattern_type": "narrative_patterns",
+        "content": "Here ends the second part of the history of the War of the Ring. \n \n     The third  part tells of  the  last defence against the Shadow, and the \nend of the mission of the Ring-bearer in THE RETURN OF THE KING.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0003",
+        "pattern_type": "narrative_patterns",
+        "content": "\"Of course!\" said Gandalf. \"And why should not they prove true? Surely you \ndon't disbelieve the prophecies, because you had a hand in bringing them about \nyourself? You don't really suppose, do you, that all your adventures and escapes \nwere managed by mere luck, just for your sole benefit? You are a very fine \nperson, Mr. Baggins, and I am very fond of you; but you are only quite a little \nfellow in a wide world after all!\" \n\"Thank goodness!\" said Bilbo laughing, and handed him the tobacco-jar.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0004",
+        "pattern_type": "narrative_patterns",
+        "content": "South there was no sign of the dragon, but there was a gathering of very many \nbirds. At that they gazed and wondered; but they were no nearer understanding it, \nwhen the first cold stars came out.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0005",
+        "pattern_type": "narrative_patterns",
+        "content": "'These  are Daeron's Runes,  such as were used  of  old in Moria,' said \nGandalf. 'Here is written in the tongues of Men and Dwarves: \n     balin son of fundin \n     lord of moria.' \n     'He  is  dead then,' said  Frodo. `I feared it was  so.' Gimli cast his \nhood over his face.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0006",
+        "pattern_type": "narrative_patterns",
+        "content": "dwarves, Mr. Baggins, and many provisions. Horses and ponies had been sent \nround by circuitous paths to meet them at their appointed landing-place. The \nMaster and his councillors bade them farewell from the great steps of the town-\nhall that went down to the lake. People sang on the quays and out of windows. \nThe white oars dipped and splashed, and off they went north up the lake on the \nlast stage of their long journey. The only person thoroughly unhappy was Bilbo.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0007",
+        "pattern_type": "narrative_patterns",
+        "content": "NOT FOR SALE \n \nThis PDF file was created for educational, \nscholarly, and Internet archival use ONLY. \n \nWith utmost respect & courtesy to the \nauthor, NO money or profit will ever be \nmade from this text or it\u2019s distribution. \n \nxxXsTmXxx \n06/2000",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0008",
+        "pattern_type": "narrative_patterns",
+        "content": "departed, his sons long remained, together with some of the High-elven folk. \nIt  is  said  that  Celeborn  went  to  dwell  there after the departure  of \nGaladriel; but there is no record of the day when at last he sought the Grey \nHavens,  and  with  him went the last  living  memory  of the  Elder Days in \nMiddle-earth.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0009",
+        "pattern_type": "narrative_patterns",
+        "content": "Complete Table of Contents \n \n Foreword  \n     \n Prologue  \n     1.  \nConcerning Hobbits  \n     2.  \nConcerning Pipe-weed  \n     3.  \nOf the Ordering of the Shire  \n     4.  \nOf the Finding of the Ring  \n      \nnote on the shire records",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0010",
+        "pattern_type": "narrative_patterns",
+        "content": "Here ends the first part of the history of the War of the Ring. \n     The second part is called THE TWO TOWERS, since the events recounted \nin it are dominated by ORTHANC,  the citadel  of  Saruman, and  the fortress \nof MINAS MORGUL  that guards the secret entrance  to Mordor;  it  tells  of \nthe deeds and  perils of  all  the members of the now sundered fellowship, until \nthe coming of the Great Darkness. \n     The  third part tells of the  last defence against the Shadow,  and the \nend of the mission of the Ring-bearer in THE RETURN OF THE KING.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "narr_0011",
+        "pattern_type": "narrative_patterns",
+        "content": "There and back again.",
+        "provenance": [
+            "The_Hobbit_Extraction"
+        ],
+        "occurrence_count": 1
+    }
+]

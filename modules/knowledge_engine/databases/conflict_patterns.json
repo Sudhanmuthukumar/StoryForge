@@ -1,0 +1,47 @@
+[
+    {
+        "pattern_id": "conf_0001",
+        "pattern_type": "conflict_patterns",
+        "content": "out of the darkness with a flaming brand of wood in either hand. With a last \neffort Frodo,  dropping  his sword, slipped  the Ring from  his  finger  and \nclosed his right hand tight upon it.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "conf_0002",
+        "pattern_type": "conflict_patterns",
+        "content": "As he  fell  slowly into  sleep, Pippin had a  strange feeling:  he and \nGandalf  were  still as stone, seated  upon the  statue of a running  horse, \nwhile the world rolled away beneath his feet with a great noise of wind.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "conf_0003",
+        "pattern_type": "conflict_patterns",
+        "content": "Erkenbrand, lord  of Westfold. Down leaped Shadowfax, like a  deer that runs \nsurefooted  in  the mountains. The White Rider was upon them, and the terror \nof  his coming filled  the enemy with  madness. The  wild men fell on  their \nfaces before him. The Orcs reeled and screamed and cast aside both sword and \nspear. Like  a black smoke driven by a mounting wind they fled. Wailing they \npassed under the waiting shadow of the trees; and from that shadow none ever \ncame again.",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "conf_0004",
+        "pattern_type": "conflict_patterns",
+        "content": "Book V  \n     Chapter 1  Minas Tirith  \n     Chapter 2  The Passing of the Grey Company  \n     Chapter 3  The Muster of Rohan  \n     Chapter 4  The Siege of Gondor  \n     Chapter 5  The Ride of the Rohirrim  \n     Chapter 6  The Battle of the Pelennor Fields  \n     Chapter 7  The Pyre of Denethor  \n     Chapter 8  The Houses of Healing  \n     Chapter 9  The Last Debate  \n     Chapter 10  The Black Gate Opens  \n      \nBook VI  \n     Chapter 1  The Tower of Cirith Ungo \n     Chapter 2  The Land of Shadow  \n     Chapter 3  Mount Doom  \n     Chapter 4  The Field of Cormallen  \n     Chapter 5  The Steward and the King  \n     Chapter 6  Many Partings  \n     Chapter 7  Homeward Bound  \n     Chapter 8  The Scouring of the Shire  \n     Chapter 9  The Grey Havens",
+        "provenance": [
+            "v3_dataset"
+        ],
+        "occurrence_count": 1
+    },
+    {
+        "pattern_id": "conf_0005",
+        "pattern_type": "conflict_patterns",
+        "content": "Riddles in the dark.",
+        "provenance": [
+            "The_Hobbit_Extraction"
+        ],
+        "occurrence_count": 1
+    }
+]

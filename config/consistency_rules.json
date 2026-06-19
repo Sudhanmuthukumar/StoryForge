@@ -1,0 +1,36 @@
+{
+  "fact_conflicts": {
+    "alive_dead": {
+      "severity": "Critical",
+      "issue": "Character logic contradiction",
+      "recommendation": "Review the known facts to clarify if the character is alive or dead.",
+      "keywords_a": ["alive"],
+      "keywords_b": ["died", "dead"]
+    }
+  },
+  "character_conflicts": {
+    "fear_vs_action": {
+      "severity": "Medium",
+      "issue": "Action contradicts established fear.",
+      "recommendation": "Ensure the character's actions respect their established fears.",
+      "fear": "Ocean",
+      "action_keywords": ["loves swimming"]
+    },
+    "trait_contradiction": {
+      "severity": "High",
+      "issue": "Contradictory personality traits.",
+      "recommendation": "Resolve the conflicting traits.",
+      "trait_a": "Coward",
+      "trait_b": "Fearless"
+    }
+  },
+  "relationship_conflicts": {
+    "sibling_spouse": {
+      "severity": "Critical",
+      "issue": "Incompatible relationships between the same pair.",
+      "recommendation": "Remove either the Sibling or Spouse relationship.",
+      "type_a": "Sibling",
+      "type_b": "Spouse"
+    }
+  }
+}

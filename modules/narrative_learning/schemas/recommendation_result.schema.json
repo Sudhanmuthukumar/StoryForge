@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recommendation Result Schema",
+  "type": "object",
+  "properties": {
+    "recommendation_type": {
+      "type": "string",
+      "description": "The type of recommendation applied."
+    },
+    "sample_size": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of times this recommendation has been applied and evaluated."
+    },
+    "average_health_delta": {
+      "type": "number",
+      "description": "Average change in health metric."
+    },
+    "average_diversity_delta": {
+      "type": "number",
+      "description": "Average change in diversity metric."
+    },
+    "success_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Overall success rate (0.0 to 1.0) of this recommendation type."
+    }
+  },
+  "required": [
+    "recommendation_type",
+    "sample_size",
+    "average_health_delta",
+    "average_diversity_delta",
+    "success_rate"
+  ]
+}

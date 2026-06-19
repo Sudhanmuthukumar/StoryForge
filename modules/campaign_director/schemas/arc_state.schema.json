@@ -1,0 +1,177 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "arc_state.schema.json",
+    "title": "Arc State",
+    "description": "Defines persistent story arc tracking state for the Campaign Director. Captures the full lifecycle of campaign acts, faction arcs, and character arcs including progress, key events, and milestones.",
+    "type": "object",
+    "required": [
+        "campaign_id",
+        "current_act",
+        "acts",
+        "faction_arcs",
+        "character_arcs"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "campaign_id": {
+            "type": "string",
+            "description": "Unique identifier for the campaign this arc state belongs to."
+        },
+        "current_act": {
+            "type": "string",
+            "description": "Identifier of the currently active act in the campaign."
+        },
+        "acts": {
+            "type": "array",
+            "description": "Ordered list of acts that compose the campaign's main storyline.",
+            "items": {
+                "type": "object",
+                "required": [
+                    "act_id",
+                    "name",
+                    "status",
+                    "progress",
+                    "major_events"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "act_id": {
+                        "type": "string",
+                        "description": "Unique identifier for the act."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Display name of the act."
+                    },
+                    "status": {
+                        "type": "string",
+                        "enum": [
+                            "pending",
+                            "active",
+                            "completed"
+                        ],
+                        "description": "Current status of the act."
+                    },
+                    "progress": {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Completion progress of the act. 0.0 = not started, 1.0 = fully complete."
+                    },
+                    "major_events": {
+                        "type": "array",
+                        "description": "Significant events that have occurred during this act.",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "event_id",
+                                "description",
+                                "timestamp"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                                "event_id": {
+                                    "type": "string",
+                                    "description": "Unique identifier for the event."
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "description": "Human-readable description of the event."
+                                },
+                                "timestamp": {
+                                    "type": "string",
+                                    "description": "Timestamp or in-game date when the event occurred."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "faction_arcs": {
+            "type": "array",
+            "description": "Story arcs associated with individual factions.",
+            "items": {
+                "type": "object",
+                "required": [
+                    "faction",
+                    "arc_state",
+                    "key_events"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "faction": {
+                        "type": "string",
+                        "description": "Name or identifier of the faction."
+                    },
+                    "arc_state": {
+                        "type": "string",
+                        "enum": [
+                            "dormant",
+                            "rising",
+                            "peak",
+                            "declining",
+                            "resolved"
+                        ],
+                        "description": "Current narrative state of the faction's story arc."
+                    },
+                    "key_events": {
+                        "type": "array",
+                        "description": "Notable events in this faction's arc history.",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "character_arcs": {
+            "type": "array",
+            "description": "Personal story arcs for individual NPCs.",
+            "items": {
+                "type": "object",
+                "required": [
+                    "npc_id",
+                    "name",
+                    "arc_phase",
+                    "progress",
+                    "milestones"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "npc_id": {
+                        "type": "string",
+                        "description": "Unique identifier of the NPC."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Display name of the NPC."
+                    },
+                    "arc_phase": {
+                        "type": "string",
+                        "enum": [
+                            "introduction",
+                            "development",
+                            "crisis",
+                            "resolution"
+                        ],
+                        "description": "Current phase of the character's personal story arc."
+                    },
+                    "progress": {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Completion progress of the character arc. 0.0 = just started, 1.0 = fully resolved."
+                    },
+                    "milestones": {
+                        "type": "array",
+                        "description": "Key milestones reached in this character's arc.",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

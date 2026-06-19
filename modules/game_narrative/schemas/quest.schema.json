@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Quest",
+  "type": "object",
+  "required": ["quest_id", "title", "description", "quest_type", "objectives", "rewards", "outcomes"],
+  "properties": {
+    "quest_id": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "quest_type": { "type": "string", "enum": ["Main", "Side", "Faction", "Companion", "Random Event"] },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["objective_id", "description", "condition"],
+        "properties": {
+          "objective_id": { "type": "string" },
+          "description": { "type": "string" },
+          "condition": { "type": "string" }
+        }
+      }
+    },
+    "rewards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["reward_type", "amount"],
+        "properties": {
+          "reward_type": { "type": "string" },
+          "amount": { "type": "string" }
+        }
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["outcome_id", "description"],
+        "properties": {
+          "outcome_id": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}

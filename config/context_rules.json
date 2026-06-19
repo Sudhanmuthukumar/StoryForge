@@ -1,0 +1,14 @@
+{
+  "max_context_chars": 8000,
+  "importance_weights": {
+    "characters": 1.0,
+    "relationships": 0.9,
+    "consistency": 1.0,
+    "themes": 0.7,
+    "events": 0.8,
+    "analysis": 0.6,
+    "preferences": 0.8,
+    "training": 0.5,
+    "universe": 0.9
+  }
+}

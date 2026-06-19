@@ -1,0 +1,18 @@
+[
+    {
+        "category": "Fantasy",
+        "prompt": "A young scout discovers strange footprints beyond the village border."
+    },
+    {
+        "category": "Sci-Fi",
+        "prompt": "The ship's AI calmly explains why the airlock must remain sealed."
+    },
+    {
+        "category": "Horror",
+        "prompt": "You wake up and the mirror in your room is facing the wall."
+    },
+    {
+        "category": "Dialogue",
+        "prompt": "Two rival assassins are forced to share a cab ride in the rain."
+    }
+]

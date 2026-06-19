@@ -1,0 +1,255 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "campaign_health.schema.json",
+    "title": "Campaign Health Metrics",
+    "description": "Defines the structure for campaign health metrics tracked by the Campaign Director. Captures real-time narrative vitals including tension, pacing state, active directives, and story arc progress across the campaign.",
+    "type": "object",
+    "required": [
+        "timestamp",
+        "metrics",
+        "pacing_state",
+        "active_directives",
+        "arc_progress"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 timestamp of when the health snapshot was recorded."
+        },
+        "metrics": {
+            "type": "object",
+            "description": "Core narrative health metrics, each normalized to a 0.0–1.0 scale.",
+            "required": [
+                "tension",
+                "conflict",
+                "mystery",
+                "quest_density",
+                "event_frequency",
+                "faction_pressure",
+                "world_stability"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "tension": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "description": "Overall narrative tension level. 0.0 = completely relaxed, 1.0 = maximum tension."
+                },
+                "conflict": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "description": "Degree of active conflict in the campaign world. 0.0 = peaceful, 1.0 = all-out war."
+                },
+                "mystery": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "description": "Level of unresolved mysteries and unanswered questions. 0.0 = fully resolved, 1.0 = deeply enigmatic."
+                },
+                "quest_density": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "description": "Ratio of active quests relative to the campaign's capacity. 0.0 = no quests, 1.0 = overloaded."
+                },
+                "event_frequency": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "description": "Rate at which notable events are occurring. 0.0 = dormant, 1.0 = relentless activity."
+                },
+                "faction_pressure": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "description": "Aggregate pressure exerted by factions on the world and players. 0.0 = passive, 1.0 = overwhelming."
+                },
+                "world_stability": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "maximum": 1.0,
+                    "description": "Overall stability of the campaign world. 0.0 = chaos, 1.0 = perfect order."
+                }
+            }
+        },
+        "pacing_state": {
+            "type": "string",
+            "enum": [
+                "rising_action",
+                "climax",
+                "falling_action",
+                "resolution",
+                "cooldown"
+            ],
+            "description": "Current narrative pacing phase of the campaign."
+        },
+        "active_directives": {
+            "type": "array",
+            "description": "List of currently active directives issued by the Campaign Director.",
+            "items": {
+                "type": "object",
+                "required": [
+                    "directive_id",
+                    "type",
+                    "description",
+                    "priority"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "directive_id": {
+                        "type": "string",
+                        "description": "Unique identifier for the directive."
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "Category or type of the directive."
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Human-readable description of what the directive instructs."
+                    },
+                    "priority": {
+                        "type": "string",
+                        "enum": [
+                            "low",
+                            "medium",
+                            "high",
+                            "critical"
+                        ],
+                        "description": "Priority level of the directive."
+                    }
+                }
+            }
+        },
+        "arc_progress": {
+            "type": "object",
+            "description": "Progress tracking for all story arcs in the campaign.",
+            "required": [
+                "main_campaign",
+                "regional_arcs",
+                "faction_arcs",
+                "character_arcs"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "main_campaign": {
+                    "type": "object",
+                    "description": "Progress of the main campaign arc.",
+                    "required": [
+                        "act",
+                        "progress"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "act": {
+                            "type": "string",
+                            "description": "Current act of the main campaign."
+                        },
+                        "progress": {
+                            "type": "number",
+                            "minimum": 0.0,
+                            "maximum": 1.0,
+                            "description": "Completion progress within the current act. 0.0 = just started, 1.0 = complete."
+                        }
+                    }
+                },
+                "regional_arcs": {
+                    "type": "array",
+                    "description": "Progress of arcs tied to specific regions.",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "region",
+                            "act",
+                            "progress"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                            "region": {
+                                "type": "string",
+                                "description": "Name or identifier of the region."
+                            },
+                            "act": {
+                                "type": "string",
+                                "description": "Current act of the regional arc."
+                            },
+                            "progress": {
+                                "type": "number",
+                                "minimum": 0.0,
+                                "maximum": 1.0,
+                                "description": "Completion progress within the regional arc. 0.0 = just started, 1.0 = complete."
+                            }
+                        }
+                    }
+                },
+                "faction_arcs": {
+                    "type": "array",
+                    "description": "Progress of arcs tied to specific factions.",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "faction",
+                            "state",
+                            "progress"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                            "faction": {
+                                "type": "string",
+                                "description": "Name or identifier of the faction."
+                            },
+                            "state": {
+                                "type": "string",
+                                "description": "Current narrative state of the faction arc."
+                            },
+                            "progress": {
+                                "type": "number",
+                                "minimum": 0.0,
+                                "maximum": 1.0,
+                                "description": "Completion progress of the faction arc. 0.0 = just started, 1.0 = complete."
+                            }
+                        }
+                    }
+                },
+                "character_arcs": {
+                    "type": "array",
+                    "description": "Progress of arcs tied to specific NPCs.",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "npc_id",
+                            "name",
+                            "arc_phase",
+                            "progress"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                            "npc_id": {
+                                "type": "string",
+                                "description": "Unique identifier of the NPC."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "Display name of the NPC."
+                            },
+                            "arc_phase": {
+                                "type": "string",
+                                "description": "Current phase of the character's personal arc."
+                            },
+                            "progress": {
+                                "type": "number",
+                                "minimum": 0.0,
+                                "maximum": 1.0,
+                                "description": "Completion progress of the character arc. 0.0 = just started, 1.0 = complete."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

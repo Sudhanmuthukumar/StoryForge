@@ -1,0 +1,10 @@
+{
+  "edge_weights": {
+    "appears_in": 1.0,
+    "related_to": 0.8,
+    "located_in": 1.0,
+    "belongs_to": 1.0,
+    "same_entity": 2.0,
+    "conflicts_with": 0.5
+  }
+}

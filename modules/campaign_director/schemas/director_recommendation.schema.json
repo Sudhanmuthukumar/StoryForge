@@ -1,0 +1,133 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "director_recommendation.schema.json",
+    "title": "Director Recommendation",
+    "description": "Defines recommendations issued by the Campaign Director to guide the Dungeon Master. Each recommendation targets a specific narrative metric and includes actionable guidance with optional constraints to shape upcoming gameplay.",
+    "type": "object",
+    "required": [
+        "recommendation_id",
+        "timestamp",
+        "mode",
+        "recommendations",
+        "constraints"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "recommendation_id": {
+            "type": "string",
+            "description": "Unique identifier for this recommendation batch."
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 timestamp of when the recommendation was issued."
+        },
+        "mode": {
+            "type": "string",
+            "enum": [
+                "observation",
+                "recommendation",
+                "control"
+            ],
+            "description": "Operating mode of the Campaign Director. 'observation' = passive monitoring only, 'recommendation' = suggestions offered to the DM, 'control' = director actively steers events."
+        },
+        "recommendations": {
+            "type": "array",
+            "description": "List of individual recommendations for the Dungeon Master.",
+            "items": {
+                "type": "object",
+                "required": [
+                    "type",
+                    "priority",
+                    "description",
+                    "target_metric",
+                    "current_value",
+                    "target_value"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "pacing",
+                            "diversity",
+                            "arc_advancement",
+                            "tension_adjustment",
+                            "cooldown"
+                        ],
+                        "description": "Category of the recommendation."
+                    },
+                    "priority": {
+                        "type": "string",
+                        "enum": [
+                            "low",
+                            "medium",
+                            "high",
+                            "critical"
+                        ],
+                        "description": "Priority level indicating urgency of the recommendation."
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Human-readable explanation of the recommendation and suggested actions."
+                    },
+                    "target_metric": {
+                        "type": "string",
+                        "description": "The campaign health metric this recommendation aims to influence (e.g., 'tension', 'conflict', 'mystery')."
+                    },
+                    "current_value": {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Current observed value of the target metric."
+                    },
+                    "target_value": {
+                        "type": "number",
+                        "minimum": 0.0,
+                        "maximum": 1.0,
+                        "description": "Desired value the target metric should move toward."
+                    }
+                }
+            }
+        },
+        "constraints": {
+            "type": "array",
+            "description": "Constraints that should be applied to upcoming campaign events or decisions.",
+            "items": {
+                "type": "object",
+                "required": [
+                    "constraint_id",
+                    "type",
+                    "description",
+                    "duration_ticks"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "constraint_id": {
+                        "type": "string",
+                        "description": "Unique identifier for the constraint."
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "event_spawn_block",
+                            "quest_type_preference",
+                            "faction_focus",
+                            "cooldown_period"
+                        ],
+                        "description": "Category of the constraint."
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Human-readable explanation of the constraint and its intended effect."
+                    },
+                    "duration_ticks": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Number of game ticks the constraint remains active. 0 = indefinite until manually removed."
+                    }
+                }
+            }
+        }
+    }
+}

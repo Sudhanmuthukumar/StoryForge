@@ -1,0 +1,30 @@
+[
+    {
+        "category": "Fantasy",
+        "prompt": "Write a descriptive fantasy scene where a hero discovers an ancient artifact."
+    },
+    {
+        "category": "Sci-Fi",
+        "prompt": "Write a tense sci-fi scene about a malfunction on a deep space vessel."
+    },
+    {
+        "category": "Mystery",
+        "prompt": "Write a suspenseful mystery scene where a detective finds a cryptic clue in a dark alley."
+    },
+    {
+        "category": "Adventure",
+        "prompt": "Describe an action-packed adventure sequence where the protagonist escapes a collapsing ruin."
+    },
+    {
+        "category": "Character Drama",
+        "prompt": "Write an emotional character drama scene featuring a difficult confession between two old friends."
+    },
+    {
+        "category": "Dialogue",
+        "prompt": "Write a compelling dialogue sequence between a charismatic villain and a captured spy."
+    },
+    {
+        "category": "Worldbuilding",
+        "prompt": "Write a descriptive worldbuilding passage establishing the culture and architecture of a desert city."
+    }
+]

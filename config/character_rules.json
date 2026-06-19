@@ -1,0 +1,21 @@
+{
+  "traits": {
+    "Brave": [
+      "(?i)\\bcharged into battle\\b",
+      "(?i)\\bfearlessly\\b"
+    ]
+  },
+  "goals": {
+    "Save Kingdom": [
+      "(?i)\\bwanted to save the kingdom\\b"
+    ]
+  },
+  "fears": {
+    "Ocean": [
+      "(?i)\\bfeared the ocean\\b"
+    ]
+  },
+  "motivations": {},
+  "strengths": {},
+  "weaknesses": {}
+}

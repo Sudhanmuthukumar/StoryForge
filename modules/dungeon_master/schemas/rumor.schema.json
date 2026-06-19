@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Rumors",
+  "type": "object",
+  "required": ["tavern_rumors", "news_bulletins", "faction_reports", "regional_updates"],
+  "properties": {
+    "tavern_rumors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rumor_id", "speaker", "text", "location", "credibility"],
+        "properties": {
+          "rumor_id": { "type": "string" },
+          "speaker": { "type": "string" },
+          "text": { "type": "string" },
+          "location": { "type": "string" },
+          "credibility": { "type": "string", "enum": ["Low", "Medium", "High"] }
+        }
+      }
+    },
+    "news_bulletins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["bulletin_id", "headline", "body", "issuer"],
+        "properties": {
+          "bulletin_id": { "type": "string" },
+          "headline": { "type": "string" },
+          "body": { "type": "string" },
+          "issuer": { "type": "string" }
+        }
+      }
+    },
+    "faction_reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["report_id", "faction", "subject", "content", "security_clearance"],
+        "properties": {
+          "report_id": { "type": "string" },
+          "faction": { "type": "string" },
+          "subject": { "type": "string" },
+          "content": { "type": "string" },
+          "security_clearance": { "type": "string", "enum": ["Public", "Confidential", "Top Secret"] }
+        }
+      }
+    },
+    "regional_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["update_id", "region", "status", "danger_level", "weather"],
+        "properties": {
+          "update_id": { "type": "string" },
+          "region": { "type": "string" },
+          "status": { "type": "string" },
+          "danger_level": { "type": "string", "enum": ["Low", "Medium", "High", "Critical"] },
+          "weather": { "type": "string" }
+        }
+      }
+    }
+  }
+}

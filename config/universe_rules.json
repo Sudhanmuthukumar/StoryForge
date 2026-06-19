@@ -1,0 +1,8 @@
+{
+  "conflict_detection": {
+    "same_name": true,
+    "different_traits": true,
+    "different_goals": true,
+    "different_facts": true
+  }
+}

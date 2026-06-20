@@ -138,7 +138,7 @@ Future development includes:
 * Improved creator tooling
 
 ## Maintainer
-<<<<<<< HEAD
+
 Additional documentation is available in:
 
 - INSTALLATION.md
@@ -163,7 +163,5 @@ Future development includes expanded genre datasets, additional training workflo
 ---
 
 Maintainer
-=======
->>>>>>> 147a264 (Update documentation and dependency management)
 
 GitHub: @Sudhanmuthukumar

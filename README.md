@@ -1,441 +1,93 @@
 StoryForge V1.0.0
 
-StoryForge is a local AI storytelling and narrative engineering platform designed to help creators build, analyze, train, evaluate, and export narrative systems.
+StoryForge is a local AI storytelling and narrative engineering platform designed for creating, analyzing, training, evaluating, and generating narrative content.
 
-The project combines dataset extraction, pattern analysis, knowledge engineering, model training pipelines, evaluation tools, narrative generation systems, and worldbuilding workflows into a single integrated platform.
+The project combines dataset creation, knowledge extraction, model training, evaluation workflows, and creative storytelling tools into a single integrated workspace.
 
-StoryForge was developed as a personal AI engineering project to explore storytelling systems, dataset construction, local LLM fine-tuning, narrative intelligence, simulation engines, and narrative generation.
+StoryForge was built as a personal AI engineering project focused on narrative intelligence, dataset construction, local LLM fine-tuning, and storytelling systems.
 
 ---
 
-Core Features
+Features
 
 Dataset Lab
 
-Extracts and processes literary source material into structured narrative datasets.
-
-Features:
-
-* Document extraction
-* Chapter segmentation
-* Pattern extraction
-* Dataset generation
-* Quality validation
-* Benchmark dataset creation
+Create and process narrative datasets through extraction, segmentation, pattern discovery, validation, and benchmarking workflows.
 
 Knowledge Engine
 
-Builds reusable narrative knowledge from extracted datasets.
-
-Stores:
-
-* Character patterns
-* Conflict patterns
-* Dialogue patterns
-* Narrative structures
-* Scene patterns
-* Pacing patterns
-* Worldbuilding patterns
+Build reusable storytelling knowledge including character archetypes, conflicts, dialogue patterns, narrative structures, pacing techniques, and worldbuilding concepts.
 
 Research Lab
 
-Tracks experiments and evaluates narrative pattern effectiveness.
-
-Features:
-
-* Dataset experiment tracking
-* Pattern performance analysis
-* Evaluation history
-* Training history
+Track experiments, analyze patterns, and maintain evaluation and training histories.
 
 Training Pipeline
 
-Local fine-tuning workflow for language models.
-
-Features:
-
-* Dataset preparation
-* QLoRA training support
-* Training estimation
-* Training queue management
-* Model registry management
+Prepare datasets, manage training jobs, and fine-tune local language models using QLoRA workflows.
 
 Evaluation Pipeline
 
-Benchmark and compare trained models.
-
-Features:
-
-* Prompt benchmarking
-* Response grading
-* Comparative evaluation
-* Performance scoring
+Benchmark models, compare responses, and measure performance across narrative tasks.
 
 Creator Suite
 
-Narrative design tools for writers and worldbuilders.
+Design stories, characters, lore, and narrative structures using integrated creative tools.
 
-Includes:
+World State Engine
 
-* Story Architect
-* Character Forge
-* Lore Builder
-* Quest Generator
-* Narrative Analyzer
-
-Game Narrative Toolkit
-
-Generates structured narrative content.
-
-Includes:
-
-* NPC Forge
-* Faction Builder
-* Quest Chain Builder
-* Campaign Builder
-
-NPC Intelligence System
-
-Generates stateful NPC behavior.
-
-Includes:
-
-* Memory Engine
-* Goal Engine
-* Relationship Engine
-* Reaction Engine
-
-Dynamic World State Engine
-
-Simulates deterministic world evolution.
-
-Tracks:
-
-* Security
-* Prosperity
-* Stability
-* Reputation
-* Event consequences
+Simulate deterministic world events, consequences, and state changes for dynamic narrative systems.
 
 Export Layer
 
-Exports generated content into portable structured formats.
-
-Supported:
-
-* JSON
-* YAML
-* CSV
+Export generated content into JSON, YAML, and CSV formats for integration with external tools and workflows.
 
 ---
 
-Architecture
+Technologies
 
-StoryForge is organized into modular systems:
-
-Dataset Lab
-→ Knowledge Engine
-→ Research Lab
-→ Training Pipeline
-→ Evaluation Pipeline
-→ Creator Suite
-→ Game Narrative Toolkit
-→ NPC Intelligence
-→ World State Engine
-→ Export Layer
+- Python
+- PyQt6
+- Ollama
+- QLoRA
+- JSON
+- YAML
 
 ---
 
-Project Structure
+Getting Started
 
-StoryForge
-│
-├── config/
-├── core/
-├── dataset_lab/
-├── docs/
-├── models/
-├── modules/
-├── services/
-├── tests/
-├── ui/
-├── utils/
-│
-├── main.py
-├── requirements.txt
-└── README.md
+Install dependencies:
 
----
+pip install -r requirements.txt
 
-Technologies Used
+Run StoryForge:
 
-* Python
-* PyQt6
-* Ollama
-* QLoRA
-* JSON
-* YAML
+python main.py
+
+Additional documentation is available in:
+
+- INSTALLATION.md
+- USER_GUIDE.md
+- ARCHITECTURE.md
+- TRAINING_DATA_SOURCES.md
 
 ---
 
 Training Data
 
-StoryForge does not distribute training datasets, books, model weights, LoRA adapters, GGUF files, or checkpoints.
+StoryForge does not distribute books, datasets, model weights, LoRA adapters, GGUF files, or checkpoints.
 
-Training validation sources are documented in:
-
-TRAINING_DATA_SOURCES.md
-
----
-
-Running StoryForge
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Launch:
-
-python main.py
-
-Additional setup instructions are available in:
-
-* INSTALLATION.md
-* USER_GUIDE.md
-* UNREAL_EXPORT_GUIDE.md
+Training validation sources are documented in "TRAINING_DATA_SOURCES.md".
 
 ---
 
 Roadmap
 
-V1.0.0
-
-* Dataset Lab
-* Knowledge Engine
-* Research Lab
-* Training Pipeline
-* Evaluation Pipeline
-* Creator Suite
-* Game Narrative Toolkit
-* NPC Intelligence
-* Dynamic World State Engine
-* Export Layer
-
-Future Work
-
-* Expanded genre datasets
-* Additional model training workflows
-* Advanced benchmark suites
-* Enhanced world simulation
-* Writer Workspace integration
+Future development includes expanded genre datasets, additional training workflows, advanced benchmark suites, and enhanced narrative simulation capabilities.
 
 ---
 
 Maintainer
-
-Sudhan M
-
-Computer Science and Engineering Student
-
-Interests:
-
-* Artificial Intelligence
-* Machine Learning
-* NLP
-* Narrative Systems
-* Game Development
-* Software Engineering* Training history
-
-### Training Pipeline
-
-Local fine-tuning workflow for language models.
-
-Features:
-
-* Dataset preparation
-* QLoRA training support
-* Training estimation
-* Training queue management
-* Model registry management
-
-### Evaluation Pipeline
-
-Benchmark and compare trained models.
-
-Features:
-
-* Prompt benchmarking
-* Response grading
-* Comparative evaluation
-* Performance scoring
-
-### Creator Suite
-
-Narrative design tools for writers and worldbuilders.
-
-Includes:
-
-* Story Architect
-* Character Forge
-* Lore Builder
-* Quest Generator
-* Narrative Analyzer
-
-### Game Narrative Toolkit
-
-Generates game-ready narrative content.
-
-Includes:
-
-* NPC Forge
-* Faction Builder
-* Quest Chain Builder
-* Campaign Builder
-
-### NPC Intelligence System
-
-Generates stateful NPC behavior.
-
-Includes:
-
-* Memory Engine
-* Goal Engine
-* Relationship Engine
-* Reaction Engine
-
-### Dynamic World State Engine
-
-Simulates deterministic world evolution.
-
-Tracks:
-
-* Security
-* Prosperity
-* Stability
-* Reputation
-* Event consequences
-
-### Unreal Export Layer
-
-Exports generated content directly into Unreal Engine compatible formats.
-
-Supported:
-
-* JSON
-* YAML
-* CSV DataTables
-
----
-
-## Architecture
-
-StoryForge is organized into modular systems:
-
-Dataset Lab
-→ Knowledge Engine
-→ Research Lab
-→ Training Pipeline
-→ Evaluation Pipeline
-→ Creator Suite
-→ Game Narrative Toolkit
-→ NPC Intelligence
-→ World State Engine
-→ Unreal Export Layer
-
----
-
-## Project Structure
-
-```text
-StoryForge
-│
-├── config/
-├── core/
-├── dataset_lab/
-├── docs/
-├── models/
-├── modules/
-├── services/
-├── tests/
-├── ui/
-├── utils/
-│
-├── main.py
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Technologies Used
-
-* Python
-* PyQt6
-* Ollama
-* QLoRA
-* JSON
-* YAML
-* Unreal Engine DataTables
-
----
-
-## Training Data
-
-StoryForge does not distribute training datasets, books, model weights, LoRA adapters, GGUF files, or checkpoints.
-
-Training validation sources are documented in:
-
-TRAINING_DATA_SOURCES.md
-
----
-
-## Running StoryForge
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Launch:
-
-```bash
-python main.py
-```
-
-Additional setup instructions are available in:
-
-* INSTALLATION.md
-* USER_GUIDE.md
-* UNREAL_EXPORT_GUIDE.md
-
----
-
-## Roadmap
-
-### V1.0.0
-
-* Dataset Lab
-* Knowledge Engine
-* Research Lab
-* Training Pipeline
-* Evaluation Pipeline
-* Creator Suite
-* Game Narrative Toolkit
-* NPC Intelligence
-* World State Engine
-* Unreal Export Layer
-
-### Future Work
-
-* Expanded genre datasets
-* Additional model training workflows
-* Advanced benchmark suites
-* Enhanced world simulation
-* Writer Workspace integration
-
----
-
-## Maintainer
 
 GitHub: @Sudhanmuthukumar

@@ -4,8 +4,8 @@ import yaml
 from pathlib import Path
 from typing import Dict, Any, List
 
-class UnrealExportLayer:
-    def __init__(self, export_dir: str = "C:/StoryForge AI/exports/unreal/game_narrative"):
+class StructuredExportLayer:
+    def __init__(self, export_dir: str = "C:/StoryForge AI/exports/unreal/interactive_narrative"):
         self.base_dir = Path(export_dir)
         self.dirs = {
             "npcs": self.base_dir / "npcs",

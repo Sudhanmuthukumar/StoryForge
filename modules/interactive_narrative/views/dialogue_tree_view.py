@@ -6,16 +6,16 @@ from PySide6.QtWidgets import (
     QTreeWidget, QTreeWidgetItem, QSplitter
 )
 from PySide6.QtCore import Qt
-from modules.game_narrative.services.game_narrative_generator import GameNarrativeGenerator
-from modules.unreal_export.services.unreal_exporter import UnrealExporter
+from modules.interactive_narrative.services.interactive_narrative_generator import InteractiveNarrativeGenerator
+from modules.export_layer.services.data_exporter import DataExporter
 
 class DialogueTreeView(QWidget):
     """UI View for Dialogue Tree Builder (Priority 2)."""
     
-    def __init__(self, generator: GameNarrativeGenerator = None, exporter: UnrealExporter = None):
+    def __init__(self, generator: InteractiveNarrativeGenerator = None, exporter: DataExporter = None):
         super().__init__()
-        self.generator = generator or GameNarrativeGenerator()
-        self.exporter = exporter or UnrealExporter()
+        self.generator = generator or InteractiveNarrativeGenerator()
+        self.exporter = exporter or DataExporter()
         self.current_data = None
         
         self._build_ui()

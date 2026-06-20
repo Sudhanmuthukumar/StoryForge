@@ -4,7 +4,7 @@ from pathlib import Path
 from services.ai_service import AIService
 from modules.knowledge_engine.services.knowledge_database import KnowledgeDatabase
 
-class GameNarrativeGenerator:
+class InteractiveNarrativeGenerator:
     """Core generator service for Phase 10 & 11 narrative game assets, verifying JSON schemas."""
     
     def __init__(self):
@@ -32,7 +32,7 @@ class GameNarrativeGenerator:
             return json.loads(raw)
         except Exception as e:
             # Fallback mock schema compliant dictionary on failure
-            print(f"[GameNarrativeGenerator] JSON Parse Error: {e}. Raw response: {response_text}")
+            print(f"[InteractiveNarrativeGenerator] JSON Parse Error: {e}. Raw response: {response_text}")
             raise ValueError(f"LLM failed to output parseable JSON: {str(e)}")
 
     # ══════════════════════════════════════════════════════════════════
@@ -51,7 +51,7 @@ class GameNarrativeGenerator:
                     break
                     
         system_prompt = (
-            "You are an expert game narrative director. Generate a game campaign planner.\n"
+            "You are an expert interactive narrative director. Generate an interactive campaign planner.\n"
             "You must output a JSON object adhering exactly to this schema:\n"
             "{\n"
             "  \"theme\": \"string\",\n"

@@ -26,7 +26,7 @@ from modules.packaging.views.model_manager_view import ModelManagerView
 from modules.knowledge_engine.views.knowledge_explorer_view import KnowledgeExplorerView
 from modules.research_lab.views.research_dashboard_view import ResearchDashboardView
 from modules.writer.views.writer_workspace_view import WriterWorkspaceView
-from modules.game_narrative.views.game_narrative_view import GameNarrativeView
+from modules.interactive_narrative.views.interactive_narrative_view import InteractiveNarrativeView
 from modules.world_simulation.views.world_simulation_view import WorldSimulationView
 from modules.dungeon_master.views.dungeon_master_view import DungeonMasterView
 from modules.campaign_director.views.campaign_director_view import CampaignDirectorView
@@ -109,7 +109,7 @@ class Workspace(QWidget):
         self._knowledge_engine_view = KnowledgeExplorerView()
         self._research_lab_view = ResearchDashboardView()
         self._writer_workspace_view = WriterWorkspaceView()
-        self._game_narrative_view = GameNarrativeView()
+        self._interactive_narrative_view = InteractiveNarrativeView()
         self._world_simulation_view = WorldSimulationView()
         self._dungeon_master_view = DungeonMasterView()
         self._campaign_director_view = CampaignDirectorView()
@@ -129,7 +129,7 @@ class Workspace(QWidget):
         self._tabs.addTab(self._research_lab_view, "🔬 Research Lab")
         self._tabs.addTab(self._preferences_view, "👤 Preferences")
         self._tabs.addTab(self._context_inspector, "🔍 Context Inspector")
-        self._tabs.addTab(self._game_narrative_view, "🎮 Game Narrative")
+        self._tabs.addTab(self._interactive_narrative_view, "🎮 Interactive Narrative")
         self._tabs.addTab(self._world_simulation_view, "🌍 World Simulation")
         self._tabs.addTab(self._dungeon_master_view, "🏰 Dungeon Master")
         self._tabs.addTab(self._campaign_director_view, "🎬 Campaign Director")
@@ -156,7 +156,7 @@ class Workspace(QWidget):
         self._chat_view.load_history(data.story.id, data.chat_history)
         self._preferences_view.load_data(data.user_profile)
         self._training_view.load_data(data.training_profile)
-        self._game_narrative_view.refresh_patterns()
+        self._interactive_narrative_view.refresh_patterns()
         
         # Make Chat (index 3) the default tab
         self._stack.setCurrentIndex(1)
@@ -179,7 +179,7 @@ class Workspace(QWidget):
         self._knowledge_engine_view.clear()
         self._research_lab_view.clear()
         self._writer_workspace_view.clear()
-        self._game_narrative_view.clear()
+        self._interactive_narrative_view.clear()
         self._world_simulation_view.clear()
         self._dungeon_master_view.clear()
         self._campaign_director_view.clear()

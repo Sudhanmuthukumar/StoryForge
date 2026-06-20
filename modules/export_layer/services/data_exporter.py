@@ -2,7 +2,7 @@ import json
 import csv
 from pathlib import Path
 
-class UnrealExporter:
+class DataExporter:
     """Service to export StoryForge narrative assets into Unreal Engine DataTable JSON and CSV formats."""
 
     def __init__(self):

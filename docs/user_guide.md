@@ -1,19 +1,19 @@
-# StoryForge AI User Guide
+# StoryForge User Guide
 
-## Workspace Overview
-StoryForge relies on a 9-Tab Dashboard providing a 360-degree view into your logic.
+StoryForge V1 is operated primarily through the **Creator Suite UI**.
 
-1. **📝 Story**: The core text editor. Write and save narratives natively.
-2. **🧠 Memory**: Extracts your raw prose actively capturing characters, artifacts, and organizations.
-3. **📊 Analysis**: Exposes internal traits highlighting critical DNA sequences.
-4. **💬 Chat**: Generates dynamic prompts bridging your data with conversational logic.
-5. **👤 Preferences**: Visualizes implicit behaviors mapped behind your habits.
-6. **📚 Training Mode**: Ingest outside DOCX, PDF, and TXT files manually feeding style behaviors into your root profile.
-7. **🌌 Universes**: Maps linked stories logically across a universal canvas automatically catching timeline conflicts.
-8. **🕸️ Universe Graph**: A textual network-explorer identifying node adjacency quickly.
-9. **🔍 Context Inspector**: Displays exactly which variables hit the AI engine safely dropping trailing structures instantly.
+## 1. Story Tools
+Use these tools during the concept phase.
+- **Story Architect**: Input a prompt to generate a 3-Act structure.
+- **Character Forge**: Input an archetype to receive a robust character profile.
+- **Lore Builder**: Generate background mythology for your world.
 
-## Creating A Universe
-Navigate to the "🌌 Universes" tab. Input a custom Universe name. 
-Add existing stories securely into this container using the native dropdown.
-The Engine will instantly extract all character definitions mapping duplicates accurately directly generating `conflicts_with` warnings on discrepancies.
+## 2. Interactive Narrative
+Use these tools to generate assets intended for export into your game engine.
+- **Intelligent NPC Forge**: Generates an NPC along with modular intelligence profiles (Memory, Goals, Relationships, Reactions). Click `Export to Unreal` to generate 5 separate datasets automatically.
+- **Faction Builder**: Generates world factions and their relationships/rivalries.
+- **Quest Chain**: Generates multi-part branching quest lines.
+- **Campaign**: Orchestrates all the above into a unified narrative structure.
+
+## 3. Analysis Tools
+- **Narrative Analyzer**: Paste generated text or custom outlines to receive pacing, conflict, and diversity heuristic scores based on the Knowledge Engine's underlying patterns.

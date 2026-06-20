@@ -6,17 +6,17 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from modules.game_narrative.services.game_narrative_generator import GameNarrativeGenerator
-from modules.unreal_export.services.unreal_exporter import UnrealExporter
+from modules.interactive_narrative.services.interactive_narrative_generator import InteractiveNarrativeGenerator
+from modules.export_layer.services.data_exporter import DataExporter
 
 class TestGameNarrative(unittest.TestCase):
     
     def setUp(self):
-        self.generator = GameNarrativeGenerator()
-        self.exporter = UnrealExporter()
+        self.generator = InteractiveNarrativeGenerator()
+        self.exporter = DataExporter()
         
     def test_schema_files_exist(self):
-        schemas_dir = Path(__file__).parent.parent / "modules" / "game_narrative" / "schemas"
+        schemas_dir = Path(__file__).parent.parent / "modules" / "interactive_narrative" / "schemas"
         self.assertTrue((schemas_dir / "campaign.schema.json").exists())
         self.assertTrue((schemas_dir / "dialogue.schema.json").exists())
         self.assertTrue((schemas_dir / "quest.schema.json").exists())
@@ -162,7 +162,7 @@ class TestGameNarrative(unittest.TestCase):
         self.assertEqual(len(res["regions"]), 1)
         self.assertEqual(res["regions"][0]["region_name"], "Shadowfen")
 
-    def test_unreal_exporter_outputs(self):
+    def test_data_exporter_outputs(self):
         # NPC Exporter
         npc = {
             "npc_id": "npc_01",

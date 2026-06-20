@@ -29,7 +29,7 @@ class EvolutionReportGenerator:
         md += f"- **Total Modules:** {len(reg_data.get('modules', []))}\n"
         md += f"- **Core Services:** {len(reg_data.get('services', []))}\n"
         md += f"- **JSON Databases:** {len(reg_data.get('databases', []))}\n"
-        md += f"- **Unreal Export Paths:** {len(reg_data.get('exports', []))}\n\n"
+        md += f"- **Export Layer Paths:** {len(reg_data.get('exports', []))}\n\n"
         
         md += "## 2. Telemetry Statistics\n\n"
         sim_stats = telemetry.get("simulation", {})

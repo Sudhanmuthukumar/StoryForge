@@ -207,7 +207,7 @@ class TestWorldSimulation(unittest.TestCase):
         ]
         self.assertFalse(self.db.validate_event_history(invalid_history))
 
-    @unittest.mock.patch('modules.game_narrative.services.game_narrative_generator.GameNarrativeGenerator._call_llm_json')
+    @unittest.mock.patch('modules.interactive_narrative.services.interactive_narrative_generator.InteractiveNarrativeGenerator._call_llm_json')
     def test_dialogue_prompt_context_injection(self, mock_call_llm):
         mock_call_llm.return_value = {
             "tree_id": "test_tree",
@@ -232,7 +232,7 @@ class TestWorldSimulation(unittest.TestCase):
         }
         self.db.write_db("npc_memory.json", valid_mem)
         
-        from modules.game_narrative.services.game_narrative_generator import GameNarrativeGenerator
+        from modules.interactive_narrative.services.interactive_narrative_generator import InteractiveNarrativeGenerator
         
         # Patch the default db_dir in __init__ of SimulationDatabase
         from modules.world_simulation.services.simulation_database import SimulationDatabase
@@ -240,7 +240,7 @@ class TestWorldSimulation(unittest.TestCase):
         SimulationDatabase.__init__.__defaults__ = (str(self.test_db_dir),)
         
         try:
-            generator = GameNarrativeGenerator()
+            generator = InteractiveNarrativeGenerator()
             generator.generate_dialogue_tree("Alistair the Paladin (1)", "Quest Inquiry", "Friendly")
             
             self.assertTrue(mock_call_llm.called)

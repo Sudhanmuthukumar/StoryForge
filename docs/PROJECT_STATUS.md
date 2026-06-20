@@ -12,10 +12,10 @@ Feature Complete
 * Training Pipeline
 * Evaluation Pipeline
 * Creator Suite
-* Game Narrative Toolkit
+* Interactive Narrative Toolkit
 * NPC Intelligence
 * Dynamic World State Engine
-* Unreal Export Layer
+* Export Layer Layer
 
 ### Validated Model:
 * Qwen2.5-3B (QLoRA)

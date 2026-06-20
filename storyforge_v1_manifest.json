@@ -8,11 +8,11 @@
         "research_lab": "Present",
         "creator_suite": "Present",
         "storyforge_core": "Present",
-        "unreal_export": "Present",
+        "export_layer": "Present",
         "world_state": "Present",
         "npc_intelligence": "Present",
-        "game_narrative_toolkit": "Present",
+        "interactive_narrative_toolkit": "Present",
         "world_state_engine": "Present",
-        "unreal_export_layer": "Present"
+        "structured_export_layer": "Present"
     }
 }

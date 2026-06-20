@@ -1,20 +1,20 @@
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QTabWidget, QLabel
-from modules.game_narrative.services.game_narrative_generator import GameNarrativeGenerator
-from modules.unreal_export.services.unreal_exporter import UnrealExporter
+from modules.interactive_narrative.services.interactive_narrative_generator import InteractiveNarrativeGenerator
+from modules.export_layer.services.data_exporter import DataExporter
 
-from modules.game_narrative.views.campaign_planner_view import CampaignPlannerView
-from modules.game_narrative.views.dialogue_tree_view import DialogueTreeView
-from modules.game_narrative.views.quest_forge_view import QuestForgeView
-from modules.game_narrative.views.npc_studio_view import NPCStudioView
-from modules.game_narrative.views.lore_engine_view import LoreEngineView
+from modules.interactive_narrative.views.campaign_planner_view import CampaignPlannerView
+from modules.interactive_narrative.views.dialogue_tree_view import DialogueTreeView
+from modules.interactive_narrative.views.quest_forge_view import QuestForgeView
+from modules.interactive_narrative.views.npc_studio_view import NPCStudioView
+from modules.interactive_narrative.views.lore_engine_view import LoreEngineView
 
-class GameNarrativeView(QWidget):
-    """Master View for the Game Narrative Engine (Phase 10 & 11)."""
+class InteractiveNarrativeView(QWidget):
+    """Master View for the Interactive Narrative Engine (Phase 10 & 11)."""
     
     def __init__(self):
         super().__init__()
-        self.generator = GameNarrativeGenerator()
-        self.exporter = UnrealExporter()
+        self.generator = InteractiveNarrativeGenerator()
+        self.exporter = DataExporter()
         self._build_ui()
         
     def _build_ui(self):

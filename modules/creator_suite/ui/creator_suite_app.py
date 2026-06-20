@@ -12,7 +12,7 @@ from modules.creator_suite.services.npc_forge import NPCForge
 from modules.creator_suite.services.faction_builder import FactionBuilder
 from modules.creator_suite.services.quest_chain_builder import QuestChainBuilder
 from modules.creator_suite.services.campaign_builder import CampaignBuilder
-from modules.unreal_export.services.unreal_export_layer import UnrealExportLayer
+from modules.export_layer.services.structured_export_layer import StructuredExportLayer
 
 class CreatorSuiteApp(QMainWindow):
     def __init__(self):
@@ -21,14 +21,14 @@ class CreatorSuiteApp(QMainWindow):
         self.setGeometry(100, 100, 1000, 700)
         
         self.ke = KnowledgeEngine()
-        self.exporter = UnrealExportLayer()
+        self.exporter = StructuredExportLayer()
         
         # Story Tools
         self.architect = StoryArchitect(self.ke)
         self.forge = CharacterForge(self.ke)
         self.lore = LoreBuilder(self.ke)
         
-        # Game Tools
+        # Interactive Narrative
         self.npc = NPCForge(self.ke)
         self.faction = FactionBuilder(self.ke)
         self.quest_chain = QuestChainBuilder(self.ke)
@@ -127,7 +127,7 @@ class CreatorSuiteApp(QMainWindow):
         game_tabs.addTab(self.create_generation_tab("Quest Chain", "Theme:", lambda t: self.quest_chain.generate_chain(t or "The Awakening"), export_category="quests"), "Quest Chains")
         game_tabs.addTab(self.create_generation_tab("Campaign", "Title:", lambda t: self.campaign.build_campaign(t or "Epic Campaign"), export_category="campaigns"), "Campaign")
         
-        self.main_tabs.addTab(game_tabs, "Game Tools")
+        self.main_tabs.addTab(game_tabs, "Interactive Narrative")
 
     def setup_analysis_tools(self):
         analysis_tabs = QTabWidget()

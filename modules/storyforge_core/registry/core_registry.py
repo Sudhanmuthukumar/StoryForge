@@ -22,7 +22,7 @@ class CoreRegistry:
             registry = {
                 "modules": [
                     "dataset_lab", "knowledge_engine", "research_lab", "writer",
-                    "game_narrative", "unreal_export", "world_simulation",
+                    "interactive_narrative", "export_layer", "world_simulation",
                     "dungeon_master", "campaign_director", "narrative_learning",
                     "storyforge_core", "evaluation", "packaging", "training",
                     "creator_suite"

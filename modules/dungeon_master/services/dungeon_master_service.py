@@ -48,8 +48,8 @@ class DungeonMasterService:
             quest = self.quest_generator.generate_quest_from_hook(hook)
             generated_quests.append(quest)
             
-            # Export generated quest to Unreal export folder
-            self._export_quest_to_unreal(quest)
+            # Export generated quest to export folder
+            self._export_quest(quest)
             EventBus().publish("QuestCompleted", {"quest_id": quest.get('id', hook.get('id', 'new')), "title": quest.get('title')})
 
         # 6. Rumor Generator (Generate rumors & safety bulletins)
@@ -101,9 +101,9 @@ class DungeonMasterService:
             return 1
         return history[-1].get("tick_index", 0) + 1
 
-    def _export_quest_to_unreal(self, quest: Dict[str, Any]) -> None:
-        """Saves generated quests into exports/unreal/alpha_world/quests/ for engine import."""
-        export_dir = Path("exports/unreal/alpha_world/quests")
+    def _export_quest(self, quest: Dict[str, Any]) -> None:
+        """Saves generated quests into exports/structured/alpha_world/quests/ for engine import."""
+        export_dir = Path("exports/structured/alpha_world/quests")
         export_dir.mkdir(parents=True, exist_ok=True)
         
         quest_id = quest.get("quest_id", f"quest_{uuid.uuid4().hex[:8]}")

@@ -186,7 +186,6 @@ Future development includes:
 * Improved creator tooling
 
 ## Maintainer
-=======
 Additional documentation is available in:
 
 - INSTALLATION.md

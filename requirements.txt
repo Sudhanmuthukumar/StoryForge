@@ -1,4 +1,11 @@
 PySide6>=6.6.0
-pypdf
-python-docx
+PyQt6
 ollama
+httpx
+PyYAML
+psutil
+python-docx
+pypdf
+PyMuPDF
+beautifulsoup4
+EbookLib

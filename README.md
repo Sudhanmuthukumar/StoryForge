@@ -1,7 +1,7 @@
 StoryForge V1.0.0
 
 StoryForge is a local AI storytelling and narrative engineering platform designed for creating, analyzing, training, evaluating, and generating narrative content.
-<<<<<<< HEAD
+
 
 The platform supports storytelling workflows across multiple narrative mediums including novels, films, television, comics, games, interactive fiction, visual novels, and emerging narrative formats.
 
@@ -89,7 +89,6 @@ Dataset Lab
 * YAML
 
 ## Getting Started
-=======
 
 The project combines dataset creation, knowledge extraction, model training, evaluation workflows, and creative storytelling tools into a single integrated workspace.
 
@@ -144,9 +143,6 @@ Technologies
 
 ---
 
-Getting Started
->>>>>>> a679e3b64f2aa90532fe782873d52fa76a7f3d48
-
 Install dependencies:
 
 pip install -r requirements.txt
@@ -155,7 +151,6 @@ Run StoryForge:
 
 python main.py
 
-<<<<<<< HEAD
 ## Documentation
 
 * docs/INSTALLATION.md
@@ -216,6 +211,5 @@ Future development includes expanded genre datasets, additional training workflo
 ---
 
 Maintainer
->>>>>>> a679e3b64f2aa90532fe782873d52fa76a7f3d48
 
 GitHub: @Sudhanmuthukumar

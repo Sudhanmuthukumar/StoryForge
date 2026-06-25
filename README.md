@@ -137,8 +137,6 @@ Future development includes:
 * Larger storytelling knowledge bases
 * Improved creator tooling
 
-## Maintainer
-
 Additional documentation is available in:
 
 - INSTALLATION.md
